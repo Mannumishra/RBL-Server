@@ -1,0 +1,41 @@
+.attractive-rates {
+    background: linear-gradient(270deg, #E5E7EF 16.04%, #FDEFEF 74.96%); /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 45px 0px;
+  }
+  .attractive-rates p {
+    color: #304087;
+  }
+
+  .attractive-rates h5 .deposit {
+    text-decoration: none;
+    color: #304087; /* Darker color for headings */
+    font-weight: 500; /* Medium weight for subheadings */
+  }
+  
+  .attractive-rates p {
+    font-size: 1.25rem; /* Larger text for rates */
+    font-weight: bold; /* Bold rates */
+  }
+  
+  .attractive-rates .btn-link {
+    color: #304087; /* Bootstrap primary link color */
+    text-decoration: underline; /* Underline for link */
+  }
+  
+  .attractive-rates .btn-link:hover {
+    color: #304087; /* Darker color on hover */
+  }
+  
+  .rupee{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #304087;
+    white-space: nowrap;
+  }
+  .rupee:hover{
+    color: #2872a8;
+  }

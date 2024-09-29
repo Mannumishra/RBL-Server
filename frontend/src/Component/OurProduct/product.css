@@ -1,0 +1,52 @@
+.product-slide {
+    display: flex;
+    justify-content: center; /* Center cards within the slide */
+    padding: 10px; /* Optional: space around each card */
+}
+
+.card {
+    width: 100%; /* Allow cards to take full width of the slide */
+    border: 1px solid #ddd; /* Add border for better visibility */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s; /* Smooth scaling effect on hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.card-slider-hero{
+    padding: 23px 30px 30px;
+    background: #e9ecf7;
+}
+
+.knowmorebtn{
+    background-color: #f3f4f6;
+    border: 1px solid black;
+    color: black;
+    padding: 10px;
+    min-width: 119px;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+.apply-btn{
+    background-color: #304087;
+    border: none;
+    color: white;
+    padding: 10px;
+    min-width: 119px;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.product-title{
+    color: #304087;
+}

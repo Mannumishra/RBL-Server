@@ -1,0 +1,27 @@
+.quick-link {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+
+}
+
+.quick-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.quick-link-icon {
+  margin: 10px auto;
+height: 60px;
+width: 60px;
+}
+
+.quick-link-title {
+  font-style: normal;
+  font-weight: 400;
+  color: #304087;
+  font-size: 14px;
+  line-height: 19px;
+}

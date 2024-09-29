@@ -1,0 +1,32 @@
+
+
+.creditCardMain {
+    background: linear-gradient(45deg, #4b4e71, #80414c);
+    padding: 24px 10px;
+    height: 100vh;
+}
+
+.creditCardMain {
+    padding: 20px;
+  }
+  
+  .creditCardDiv {
+    border-radius: 8px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+  }
+  
+  .inputFields {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+  }
+
+
+  @media only screen and (max-width: 1200px) {
+    .creditCardMain{
+      height: 100%;
+    }
+  }

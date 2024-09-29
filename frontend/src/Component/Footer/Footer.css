@@ -1,0 +1,72 @@
+/* Footer.css */
+.footer {
+    background-color: #1d1d1d; /* Dark background color */
+    color: #bbb; /* Light grey text color */
+    padding: 2rem 0;
+    font-family: Arial, sans-serif; /* Adjust as needed to match the font */
+  }
+  
+  .footer h6 {
+    color: #fff; /* White text for headers */
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #444; /* Line under heading */
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    font-weight: 600; /* Slightly thicker font */
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    line-height: 1.8; /* Spacing between list items */
+    font-size: 0.95rem; /* Slightly smaller font size */
+    color: #aaa; /* Lighter grey text for links */
+  }
+  
+  .footer .footer-links {
+    margin-bottom: 2rem;
+    justify-content: space-between;
+  }
+  
+  .footer-divider {
+    border-top: 1px solid #444; /* Divider style */
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #888;
+    font-size: 0.85rem;
+    padding-top: 1rem;
+  }
+  
+  .footer-text {
+    margin-right: 1rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icons .follow-us {
+    margin-right: 1rem;
+    color: #aaa;
+  }
+  
+  .social-icons .social-icon {
+    font-size: 1.5rem; /* Larger icons */
+    margin: 0 0.5rem;
+    color: #bbb; /* Icon color */
+    text-decoration: none; /* No underline */
+  }
+  
+  .social-icons .social-icon:hover {
+    color: #fff; /* White on hover */
+  }
+  

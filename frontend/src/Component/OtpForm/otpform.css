@@ -1,0 +1,54 @@
+/* Main Container */
+.otpMain {
+  background: linear-gradient(45deg, #4b4e71, #80414c);
+  padding: 24px 10px;
+  height: 100vh;
+  }
+  
+  
+  /* OTP Form */
+  .otpFormDiv {
+    max-width: 40%;
+    border-radius: 10px;
+    margin-top: 2rem;
+  }
+  
+  .otpInputField {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .otpInputField:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Submit Button */
+  .submitOtpBtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .submitOtpBtn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .otpFormDiv{
+      max-width: 100%;
+    }
+    .otpMain {
+      padding: 20px;
+      max-width: 100%;
+    }
+  }
+  

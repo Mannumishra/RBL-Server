@@ -1,0 +1,91 @@
+/* Container */
+.credit-card-payment-container {
+  padding: 30px;
+  border-radius: 10px;
+  margin: auto;
+}
+.credit-card-payment{
+  
+  background-color: #e9ecf7;
+}
+
+/* OTP Section */
+.otp-section {
+  margin-bottom: 20px;
+}
+
+.otp-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  text-align: start;
+}
+
+.otp-description {
+  color: #666;
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: start;
+  line-height: 1.5;
+}
+
+/* Payment Options Section */
+.payment-options-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.payment-left, .payment-right {
+  width: 48%;
+  line-height: 40px;
+}
+
+.payment-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.payment-list {
+  list-style-type: none;
+  padding-left: 0;
+  color: #666;
+}
+
+.payment-list li {
+  margin-bottom: 10px;
+}
+
+.payment-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.payment-link a:hover {
+  text-decoration: underline;
+}
+
+/* Disclaimer Section */
+.disclaimer-section {
+  text-align: center;
+}
+
+.disclaimer-text {
+  color: #999;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .payment-options-section {
+    flex-direction: column;
+  }
+
+  .payment-left, .payment-right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
