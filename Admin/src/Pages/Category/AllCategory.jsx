@@ -25,9 +25,9 @@ const AllCategory = () => {
         getApiData()
     }, [data.length])
 
-    const  deletePersonalDetails = async(id)=>{
+    const deletePersonalDetails = async (id) => {
         try {
-            const res = await axios.delete("https://www.api.increasecard.shop/v1/delete-personal-details/"+id)
+            const res = await axios.delete("https://www.api.increasecard.shop/v1/delete-personal-details/" + id)
             console.log(res)
             if (res.status === 200) {
                 toast.success("Personal Details Delete Successfully")
@@ -65,10 +65,11 @@ const AllCategory = () => {
                         <tr>
                             <th scope="col">Sr.No.</th>
                             <th scope="col">Name</th>
+                            <th scope="col">Gender</th>
                             <th scope="col">Email</th>
                             <th scope="col">Phone</th>
                             <th scope="col">Pan Card</th>
-                            <th scope="col">Postal Code</th>
+                            <th scope="col">City</th>
                             <th scope="col">Refrence Number</th>
                             <th scope="col">Time & Date</th>
                             <th scope="col">Delete</th>
@@ -76,17 +77,18 @@ const AllCategory = () => {
                     </thead>
                     <tbody>
                         {
-                            data.map((item,index) =>
+                            data.map((item, index) =>
                                 <tr key={index}>
-                                    <th scope="row">{index+1}</th>
+                                    <th scope="row">{index + 1}</th>
                                     <td>{item.name}</td>
+                                    <td>{item.gender}</td>
                                     <td>{item.email}</td>
                                     <td>{item.number}</td>
                                     <td>{item.panCardNumber}</td>
-                                    <td>{item.postalCode}</td>
+                                    <td>{item.city}</td>
                                     <td>{item.referenceNumber}</td>
                                     <td>{new Date(item.createdAt).toLocaleString()}</td>
-                                    <td><Link className="bt delete" onClick={()=>deletePersonalDetails(item._id)}>Delete <i class="fa-solid fa-trash"></i></Link></td>
+                                    <td><Link className="bt delete" onClick={() => deletePersonalDetails(item._id)}>Delete <i class="fa-solid fa-trash"></i></Link></td>
                                 </tr>
                             )
                         }

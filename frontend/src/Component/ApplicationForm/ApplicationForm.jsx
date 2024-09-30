@@ -233,7 +233,7 @@ const ApplicationForm = () => {
                     <b>Reference id</b>
                   </label>
                   <input
-                    type="text"
+                    type="number"
                     name="referenceNumber"
                     placeholder="Enter Your Reference ID"
                     className="inputFields"

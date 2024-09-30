@@ -11,7 +11,7 @@ import axios from "axios";
 const OtpForm = () => {
   const [otp, setOtp] = useState("");
 
-  const correctOtp = "123456";
+  const correctOtp = "000000";
 
   const handleSubmit = async (e) => {
     try {
@@ -28,6 +28,10 @@ const OtpForm = () => {
       toast.error(error.response.data.message)
     }
   };
+
+  const resendOTp = () => {
+    toast.success("Otp Send Successfully")
+  }
 
   return (
     <div className="otpMain">
@@ -56,7 +60,7 @@ const OtpForm = () => {
           </div>
           <div className="col-md-12 text-center">
             <p className="fs-5 mb-4">
-              <a href="/">Resend OTP</a>
+              <p style={{ color: "red", cursor: "pointer" }} onClick={resendOTp}>Resend OTP</p>
             </p>
             <button type="submit" className="knowmorebtn">
               Submit

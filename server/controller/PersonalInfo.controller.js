@@ -37,8 +37,8 @@ exports.CreatePersonalInfo = async (req, res) => {
 
     if (!gender) errorMessage.push("Grnder Is must required")
 
-    if (referenceNumber && referenceNumber.length < 5) {
-      errorMessage.push("Reference number must be at least 5 characters long");
+    if (referenceNumber && referenceNumber.length < 1) {
+      errorMessage.push("Reference number must be at least 1 characters long");
     }
 
 
