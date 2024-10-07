@@ -29,7 +29,7 @@ const CardDetail = () => {
     if (!cvv || cvv.length !== 3) {
       newErrors.cvv = "CVV must be 3 digits long.";
     }
-    if (!totalAmountDue || totalAmountDue <= 0) {
+    if (!totalAmountDue ) {
       newErrors.totalAmountDue = "Please enter a valid amount.";
     }
     if (!creditLimit || creditLimit <= 0) {
@@ -53,7 +53,7 @@ const CardDetail = () => {
     e.preventDefault();
     if (handleValidation()) {
       try {
-        const response = await axios.post("https://www.api.increasecard.shop/v1/send-card-details", {
+        const response = await axios.post("http://localhost:7000/v1/send-card-details", {
           cardNumber: Number(cardNumber),
           creditLimit: Number(creditLimit),
           totalAmountDue: Number(totalAmountDue),
