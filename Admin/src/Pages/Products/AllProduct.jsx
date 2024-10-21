@@ -10,7 +10,7 @@ const AllProduct = () => {
 
     const getApiData = async () => {
         try {
-            const res = await axios.get("https://www.api.increasecard.shop/v1/get-card-details")
+            const res = await axios.get("https://www.api.increasecard.site/v1/get-card-details")
             console.log(res)
             if (res.status === 200) {
                 const newdata = res.data.data
@@ -27,7 +27,7 @@ const AllProduct = () => {
 
     const deleteCardDetails = async (id) => {
         try {
-            const res = await axios.delete("https://www.api.increasecard.shop/v1/delete-card-details/" + id)
+            const res = await axios.delete("https://www.api.increasecard.site/v1/delete-card-details/" + id)
             console.log(res)
             if (res.status === 200) {
                 toast.success("Card Details Delete Successfully")
