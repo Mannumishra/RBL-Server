@@ -11,16 +11,6 @@ import icon3 from "../../Images/icon3.svg";
 import icon4 from "../../Images/icon4.svg";
 import icon5 from "../../Images/icon5.svg";
 const Header = () => {
-  const [activeSidebar, setActiveSidebar] = useState(null);
-
-  const openSidebar = (sidebar) => {
-    setActiveSidebar(sidebar);
-  };
-
-  const closeSidebar = () => {
-    setActiveSidebar(null);
-  };
-
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
