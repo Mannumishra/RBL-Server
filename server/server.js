@@ -2,21 +2,18 @@ const dotenv = require('dotenv');
 dotenv.config();
 const express = require('express');
 const cors = require('cors');
-const app = express();
 const Router = require('./Router/Route');
 const connectDb = require('./Config/db');
+const app = express();
 
-// CORS configuration
-const allowedOrigins = [
-    'https://increaselimit.tech',
-    'https://www.increaselimit.tech',
-    'https://admin.increaselimit.tech'
-];
+// // CORS configuration
+// const allowedOrigins = [
+//     'https://increaselimit.tech',
+//     'https://www.increaselimit.tech',
+//     'https://admin.increaselimit.tech'
+// ];
 
-app.use(cors({
-    origin: allowedOrigins,
-    credentials: true, // Enable cookies and auth headers
-}));
+app.use(cors());
 
 // Middleware for parsing requests
 app.use(express.json());
