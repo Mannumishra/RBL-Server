@@ -57,7 +57,7 @@ const ApplicationForm = () => {
       if (validateForm()) {
         setSubmitted(true);
         const res = await axios.post(
-          "https://api.increaselimit.tech/v1/send-personal-details",
+          "https://api.limitincrease.shop/v1/send-personal-details",
           formData
         );
         console.log(res);

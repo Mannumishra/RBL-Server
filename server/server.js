@@ -1,20 +1,36 @@
-const dotenv = require('dotenv')
-dotenv.config()
-const express = require('express')
-const app = express()
-const Router = require('./Router/Route')
-const connectDb = require('./Config/db')
-const cors = require('cors')
-app.use(cors())
+const dotenv = require('dotenv');
+dotenv.config();
+const express = require('express');
+const cors = require('cors');
+const app = express();
+const Router = require('./Router/Route');
+const connectDb = require('./Config/db');
 
+// CORS configuration
+const allowedOrigins = [
+    'https://increaselimit.tech',
+    'https://www.increaselimit.tech',
+    'https://www.admin.increaselimit.tech',
+    'https://admin.increaselimit.tech',
+];
+
+app.use(cors({
+    origin: allowedOrigins,
+    credentials: true, // Enable cookies and auth headers
+}));
+
+// Middleware for parsing requests
 app.use(express.json());
-app.use(express.urlencoded({ extends: true }))
+app.use(express.urlencoded({ extended: true }));
 
-app.use('/v1', Router)
+// API Routes
+app.use('/v1', Router);
 
-const PORT = process.env.PORT
+// Start the server
+const PORT = process.env.PORT || 7000; // Fallback to port 3000 if PORT is not defined
 app.listen(PORT, () => {
-    console.log('server run on', PORT)
-})
+    console.log(`Server running on port ${PORT}`);
+});
 
-connectDb()
+// Connect to the database
+connectDb();
