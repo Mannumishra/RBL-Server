@@ -10,8 +10,7 @@ const connectDb = require('./Config/db');
 const allowedOrigins = [
     'https://increaselimit.tech',
     'https://www.increaselimit.tech',
-    'https://www.admin.increaselimit.tech',
-    'https://admin.increaselimit.tech',
+    'https://admin.increaselimit.tech'
 ];
 
 app.use(cors({
