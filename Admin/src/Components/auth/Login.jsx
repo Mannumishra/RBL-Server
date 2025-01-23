@@ -8,7 +8,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email !== 'rblbank@gmail.com' && password !== 'Rbl@123') {
+    if (email !== 'rblbank@gmail.com' && password !== 'Manish@123') {
       toast.error('Invalid Email Address or password');
     }
     else {
