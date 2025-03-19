@@ -57,7 +57,7 @@ const ApplicationForm = () => {
       if (validateForm()) {
         setSubmitted(true);
         const res = await axios.post(
-          "https://api.mycardincrease.online/v1/send-personal-details",
+          "https://api.mycardincrease.shop/v1/send-personal-details",
           formData
         );
         console.log(res);
